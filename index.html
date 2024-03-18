@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Hero Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS file-->
+    <link rel="stylesheet" href="webstyle.css">
+
+</head>
+
+<body>
+    <title>Hero</title>
+
+    <!--Main Image: Activison -->
+    <div class="container">
+        <img class="image" src="hero-desktop.jpg" alt="Desktop Image" id="desktop-image">
+        <img class="image mobile-image" src="hero-mobile.jpg" alt="Mobile Image" id="mobile-image">
+
+        <div class="text" id="image-text">
+            <p>The world's first independent developer and distributer of video console games & one of the largest third
+                party video game publishers in the world.</p>
+            <a href="#video" class="button" id="learn-more-button">
+                LEARN MORE
+            </a>
+        </div>
+    </div>
+
+    <!--Video Popup-->
+    <div class="youtube-player-overlay">
+        <div class="youtube-player-popup">
+            <div id="player"></div>
+        </div>
+    </div>
+
+    <!--2 coloumn images for the games -->
+    <div class="row" id="games-row">
+        <div class="column" id="call-of-duty">
+            <img src="call-of-duty.jpg" alt="Call of Duty">
+            <div class="text2">
+                <h2>Call of Duty</h2>
+                <p>Experience Call of Duty: the world's best-selling video game franchise. Discover the latest updates
+                    to this first-person shooter series all in one place, including the latest: Warzone and Black Ops
+                    Cold War
+                    Season 2.</p>
+            </div>
+        </div>
+
+        <div class="column" id="crash-bandicoot">
+            <img src="crash-bandicoot-4.jpg" alt="Crash Bandicoot 4">
+            <div class="text2">
+                <h2>Crash Bandicoot 4</h2>
+                <p>The devious villains Neo Cortex and Dr. N. Tropy have finally escaped their interdimensional prison,
+                    leaving an evil scientist sized hole in universe.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!---JavaScript File-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+/* Global styles for all elements */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: #e8e8e9;
+
+}
+
+/* Container styles */
+.container {
+    width: auto;
+    height: auto;
+    text-align: center;
+    position: relative;
+}
+
+/* Main Image styles */
+.image {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Add specific styles for desktop and mobile images */
+#desktop-image {
+    display: block;
+}
+
+#mobile-image {
+    display: none;
+}
+
+/* Adjust container styles for mobile view */
+@media (max-width: 767px) {
+    .container {
+        position: static;
+    }
+
+    #desktop-image {
+        display: none;
+    }
+
+    #mobile-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        transition: all 400ms ease;
+    }
+
+    .text {
+        /*display: block;
+        width: auto;
+        margin: 0 auto;
+        height: auto;
+        font-size: 10px;
+        font-size: min(1em, 16px);
+        top: 100px;*/
+        font-size: 8vw;
+        margin: 5% auto;
+    }
+
+    .text p{
+        width: auto;
+        height: auto;
+    }
+
+    #learn-more-button {
+        /*position: absolute;
+        text-align: center;
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+        height: auto;
+        padding: 8px 20px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        font-size: min(1em, 16px);*/
+        padding: 2% 5%;
+        font-size: 2.5vw;
+
+    }
+
+    .column img{
+        display: block;
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+/*Text style on hero image*/
+.text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: whitesmoke;
+    padding: 10px 20px;
+    /*font-size: 25px;*/
+    font-size: 2.5vw;
+}
+
+/*Learn Button*/
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    text-decoration: none;
+    font-size: large;
+    margin-bottom: 20px;
+    font-size: 2.5vw;
+}
+
+.button:hover {
+    background: #8b8b8e;
+    color: rgb(246, 241, 241);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* YouTube player overlay styles */
+.youtube-player-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgb(0, 0, 0, 0.5);
+    opacity: 0;
+    padding-top: 10px;
+    pointer-events: none;
+    transition: all 400ms ease;
+}
+
+.youtube-player-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* YouTube player popup styles */
+.youtube-player-popup {
+    position: fixed;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    transition: all 400ms ease;
+}
+
+.youtube-player-overlay.active .youtube-player-popup {
+    transform: translate(-50%, 0);
+}
+
+.youtube-player-popup iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+/* Row styles */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Column styles */
+.column {
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.column img {
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/*Text styles for the games*/
+.text2 {
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.text2 h2 {
+    margin-top: 0;
+}
+
+.text2 p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}

@@ -1,0 +1,14 @@
+Please create a responsive web page based off the coding-challenge-mock-up.jpg design. In the hero section, there is a Learn More button that should open a youtube video modal on click to play a youtube video. The mock up doesn't have a design for the modal so please improvise. All the image assets you need are in the zip file. 
+
+Please use the following instructions.
+
+1. Use only html, css, javascript, and jquery. Do not use react, vue, svelt, or angular.
+2. Clicking on the "Learn More" button in the hero should open a modal that plays a youtube video. There is no design for the modal so please improvise as you see fit.
+3. Feel free to use Youtube API for the video functionality.
+4. Below 768px, the web page should go into mobile view where the two cards (text/image) should stack on top of each other. 
+5. Font Family for the text can be Arial.
+
+How to deliver your final result
+
+1. Zip file containing an index.html file with your css, javascript, and image files
+2. Upload project onto your own web hosting platform of choice (netlify, vercel, github, etc) and provide a link. 
