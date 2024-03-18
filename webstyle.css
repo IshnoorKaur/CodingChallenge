@@ -37,7 +37,7 @@ body {
 }
 
 /* Adjust container styles for mobile view */
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .container {
         position: static;
     }
@@ -53,16 +53,18 @@ body {
         transition: all 400ms ease;
     }
 
+    #image-text {
+        font-size: 2rem;
+        margin: 5% auto;
+    }
     .text {
-        /*display: block;
+        display: block;
         width: auto;
         margin: 0 auto;
         height: auto;
         font-size: 10px;
         font-size: min(1em, 16px);
-        top: 100px;*/
-        font-size: 8vw;
-        margin: 5% auto;
+        top: 100px;
     }
 
     .text p{
@@ -71,7 +73,7 @@ body {
     }
 
     #learn-more-button {
-        /*position: absolute;
+        position: absolute;
         text-align: center;
         display: block;
         left: 50%;
@@ -81,10 +83,7 @@ body {
         padding: 8px 20px;
         margin: 0 auto;
         margin-bottom: 10px;
-        font-size: min(1em, 16px);*/
-        padding: 2% 5%;
-        font-size: 2.5vw;
-
+        font-size: min(1em, 16px);
     }
 
     .column img{
@@ -92,6 +91,19 @@ body {
         width: 80%;
         height: auto;
         margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 766px){
+    #image-text {
+        font-size: 1rem;
+        margin: 50% auto;
+    }
+
+    #learn-more-button{
+        width: auto;
+        height: auto;
+        font-size: min(1em, 16px);
     }
 }
 
